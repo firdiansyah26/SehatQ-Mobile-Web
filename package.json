@@ -1,0 +1,77 @@
+{
+  "name": "contextapp",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.12.1",
+    "@react-pdf/renderer": "^1.6.4",
+    "antd": "^3.20.7",
+    "antd-mobile": "^2.3.1",
+    "axios": "^0.19.0",
+    "clone": "^2.1.2",
+    "cross-env": "^5.2.0",
+    "debounce": "^1.2.0",
+    "dom-to-image": "^2.6.0",
+    "env-cmd": "^9.0.3",
+    "file-saver": "^2.0.2",
+    "history": "^4.9.0",
+    "jsencrypt": "^3.0.0-rc.1",
+    "jszip": "^3.2.2",
+    "loaders.css": "^0.1.2",
+    "localforage": "^1.7.3",
+    "lodash": "^4.17.15",
+    "logrocket": "^1.0.3",
+    "moment": "^2.24.0",
+    "node-rsa": "^1.0.5",
+    "node-sass": "^4.12.0",
+    "nprogress": "^0.2.0",
+    "rc-form": "^2.4.11",
+    "react": "^16.8.6",
+    "react-block-ui": "^1.3.0",
+    "react-dom": "^16.8.6",
+    "react-ga": "^2.6.0",
+    "react-loaders": "^3.0.1",
+    "react-placeholder": "^3.0.2",
+    "react-redux": "^7.1.0-rc.1",
+    "react-router-dom": "^5.0.1",
+    "react-scripts": "3.0.1",
+    "react-social-login": "^3.4.6",
+    "react-social-login-buttons": "^3.0.0",
+    "react-throttle": "^0.3.0",
+    "react-toast-notifications": "^2.2.4",
+    "react-window-size-listener": "^1.4.0",
+    "redux": "^4.0.4",
+    "redux-saga": "^1.0.5",
+    "redux-thunk": "^2.3.0",
+    "source-map-explorer": "^2.0.1",
+    "styled-components": "^4.3.2",
+    "styled-theme": "^0.3.3",
+    "universal-cookie": "^4.0.2"
+  },
+  "scripts": {
+    "start:dev": "env-cmd -e dev cross-env PORT=8010 react-scripts start",
+    "start:stg": "env-cmd -e stg cross-env PORT=8010 react-scripts start",
+    "start:prd": "env-cmd -e prd cross-env PORT=8010 react-scripts start",
+    "build:dev": "env-cmd -e dev cross-env PUBLIC_URL=/ react-scripts build",
+    "build:stg": "env-cmd -e stg cross-env GENERATE_SOURCEMAP=false PUBLIC_URL=/ react-scripts build",
+    "build:prd": "env-cmd -e prd cross-env GENERATE_SOURCEMAP=false PUBLIC_URL=/ react-scripts build",
+    "analyze": "source-map-explorer 'build/static/js/*.js'",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}
