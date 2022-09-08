@@ -16,7 +16,7 @@
     "file-saver": "^2.0.2",
     "history": "^4.9.0",
     "jsencrypt": "^3.0.0-rc.1",
-    "jszip": "^3.2.2",
+    "jszip": "^3.7.0",
     "loaders.css": "^0.1.2",
     "localforage": "^1.7.3",
     "lodash": "^4.17.15",
